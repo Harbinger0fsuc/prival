@@ -1,0 +1,106 @@
+<section class="modal" id="modal-edit-info">
+
+    <div class="modal__overlay">
+        <div class="modal__content modal-content">
+            <div class="modal-content__inner">
+                <div class="form-primary">
+                    <header class="form-primary__heading">
+                        <div class="form-primary__titlegroup">
+                            <h3 class="form-primary__title title-quick">Edit card information</h3>
+                            <button class="modal__close js-close-modal">
+                                <svg width="14" height="14">
+                                    <use xlink:href="img/sprite.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </header>
+
+                    <form>
+                        <div class="form-primary__wrapper">
+                            <!-- .form-primary-row -->
+                            <div class="form-primary__row">
+                                <!-- .form-primary-col -->
+                                <div class="form-primary__col">
+                                    <div class="form-primary__labelgroup form-labelgroup">
+                                        <label for="fName" class="form-labelgroup__label">Cardholder name</label>
+                                    </div>
+                                    <div class="form-primary__inputgroup">
+                                        <input type="text" class="input-primary" id="fName" name="fName" placeholder="Jane Cooper">
+                                    </div>
+                                </div>
+                                <!-- /.form-primary-col -->
+                            </div>
+                            <!-- /.form-primary-row -->
+
+                            <!-- .form-primary-row -->
+                            <div class="form-primary__row">
+                                <!-- .form-primary-col -->
+                                <div class="form-primary__col">
+                                    <div class="form-primary__labelgroup form-labelgroup">
+                                        <label for="cardNumber" class="form-labelgroup__label">Card number</label>
+                                    </div>
+                                    <div class="form-primary__inputgroup">
+                                        <input type="text" class="input-primary js-only-numbers js-insert-space" id="cardNumber" name="cardNumber" placeholder="4545 7878 6565 3434">
+                                    </div>
+                                </div>
+                                <!-- /.form-primary-col -->
+                            </div>
+                            <!-- /.form-primary-row -->
+
+                            <!-- .form-primary-row -->
+                            <div class="form-primary__row">
+                                <!-- .form-primary-col -->
+                                <div class="form-primary__col form-primary__col--half">
+                                    <div class="form-primary__labelgroup form-labelgroup">
+                                        <label for="expDate" class="form-labelgroup__label">Expiry date</label>
+                                    </div>
+                                    <div class="form-primary__inputgroup">
+                                        <input type="text" class="input-primary js-only-numbers js-expiry-format" id="expDate" name="expDate" placeholder="06/23">
+                                    </div>
+                                </div>
+                                <!-- /.form-primary-col -->
+
+                                <!-- .form-primary-col -->
+                                <div class="form-primary__col form-primary__col--half">
+                                    <div class="form-primary__labelgroup form-labelgroup">
+                                        <label for="cvv" class="form-labelgroup__label">
+                                            CVV
+                                        </label>
+                                        <div class="form-labelgroup__tooltip tooltip-help">
+                                            <svg class="tooltip-help__ico" width="16" height="16">
+                                                <use xlink:href="img/sprite.svg#help-circle"></use>
+                                            </svg>
+                                            <div class="tooltip-help__content">
+                                                <div class="tooltip-help__info">
+                                                    The CVV is the last three digits on the back of your card
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-primary__inputgroup">
+                                        <input type="text" class="input-primary" id="cvv" name="cvv" placeholder="564">
+                                    </div>
+                                </div>
+                                <!-- /.form-primary-col -->
+                            </div>
+                            <!-- /.form-primary-row -->
+                        </div>
+
+                        <div class="form-primary__ineraction form-interaction">
+                            <ul class="form-interaction__btngroup form-interaction-btngroup">
+                                <!-- .form-interaction-btngroup-item -->
+                                <li class="form-interaction-btngroup__item">
+                                    <button class="btn-shop">
+                                        Save
+                                    </button>
+                                </li>
+                                <!-- /.form-interaction-btngroup-item -->
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,118 @@
+.form-wizard {
+    &__progress {
+        margin-bottom: 9px;
+    }
+
+    .wizard-progress__list {
+        display: flex;
+        flex-wrap: wrap;
+        counter-reset: wizard-progress;
+        margin: 0 -15px;
+
+        @media (max-width: 1200px) {
+            margin: 0 -8px;
+        }
+
+        @include mobile-m {
+            flex-direction: column;
+        }
+
+        & > * {
+            padding: 0 15px;
+
+            @media (max-width: 1200px) {
+                padding: 0 8px;
+            }
+        }
+    }
+
+    .wizard-progress__item {
+        display: flex;
+        align-items: center;
+        color: var(--color-gray-noble);
+        font-size: 16px;
+        margin-bottom: 15px;
+
+        @media (max-width: 1200px) {
+            font-size: 13px;
+        }
+
+        &.is-active {
+            color: var(--color-black);
+
+            &::before {
+                background-color: var(--color-gray-mercury);
+            }
+        }
+
+        &::marker {
+            content: none;
+        }
+
+        &::before {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--color-gray-sand);
+            counter-increment: wizard-progress;
+            content: counter(wizard-progress);
+            padding: 5px;
+            margin-right: 16px;
+
+            @media (max-width: 1200px) {
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+                margin-right: 7px;
+            }
+        }
+    }
+
+    &__backlink {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+        & > * {
+            margin-right: 8px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .wizard-backlink__ico {
+        flex-shrink: 0;
+    }
+
+    form {
+        margin: 0;
+        padding: 0;
+    }
+
+    &-pane {
+        display: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+
+        & > * {
+            margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-pane__links {
+        a {
+            text-decoration: underline;
+        }
+    }
+}

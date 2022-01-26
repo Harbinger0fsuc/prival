@@ -1,0 +1,31 @@
+.js-custom-scrollbar {
+    padding-right: 24px;
+}
+
+.simplebar-track.simplebar-horizontal {
+    display: none;
+ }
+
+.simplebar-content {
+    overflow-x: hidden;
+}
+
+.simplebar-track {
+    // z-index: 20;
+
+    &.simplebar-vertical {
+        // margin-right: -24px;
+    }
+}
+
+.simplebar-scrollbar {
+    &::before {
+        background-color: var(--color-golden);
+    }
+
+    &.simplebar-visible {
+        &::before {
+            opacity: 1;
+        }
+    }
+}

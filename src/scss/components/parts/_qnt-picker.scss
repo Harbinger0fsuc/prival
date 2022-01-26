@@ -1,0 +1,52 @@
+.qnt-picker {
+	--size: 34px;
+
+	display: inline-flex;
+	align-items: center;
+
+	&__btn {
+		display: flex;
+		flex: 0 0 var(--size);
+		align-items: center;
+		justify-content: center;
+		width: var(--size); // just in case
+		height: var(--size);
+		padding: 5px;
+		line-height: 1;
+		background-color: transparent;
+		border: 1px solid var(--color-silver);
+		transition: all 3s linear;
+
+		&:hover {
+			color: var(--color-white);
+			background: var(--bg-color-secondary);
+		}
+
+		svg {
+			fill: var(--color-silver);
+		}
+	}
+
+	&__input[type="number"] {
+		width: 65px;
+		height: 100%;
+		padding: 4px;
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		-moz-appearance: textfield;
+
+		@include mobile-ss {
+			font-size: 12px;
+			width: 45px;
+		}
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}

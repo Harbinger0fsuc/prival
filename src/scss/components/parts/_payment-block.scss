@@ -1,0 +1,35 @@
+.payment-block {
+    & > * {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5.5px;
+
+        & > * {
+            padding: 0 5.5px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 11px;
+
+        & > * {
+            height: 100%;
+        }
+    }
+
+    .checkbox-payment__label {
+        height: 100%;
+    }
+}

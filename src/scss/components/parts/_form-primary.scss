@@ -1,0 +1,169 @@
+.form-primary {
+    --gap: 15px;
+
+    & > * {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__heading {
+        & > * {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__titlegroup {
+        display: flex;
+        align-items: center;
+        margin-right: -10px;
+        margin-left: -10px;
+
+        & > * {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    form {
+        margin: 0;
+        padding: 0;
+
+        & > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__wrapper {
+        margin-bottom: 14px;
+    }
+
+    &__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: calc(var(--gap) * -1);
+		margin-left: calc(var(--gap) * -1);
+
+		& > * {
+			padding-right: var(--gap);
+			padding-left: var(--gap);
+		}
+	}
+
+	&__col {
+        display: flex;
+        flex-direction: column;
+		flex: 1 1 100%;
+        width: 100%;
+		margin-bottom: 24px;
+
+        & > .btn-shop {
+            margin-top: auto;
+        }
+
+		&--half {
+			flex-basis: 50%;
+            width: 50%;
+
+            @include mobile-m {
+                flex-basis: 100%;
+                width: 100%;
+            }
+		}
+	}
+
+    .form-labelgroup {
+        display: flex;
+        align-items: center;
+		& > * {
+			margin-bottom: 4px;
+            margin-right: 5px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+		}
+	}
+
+    &__inputgroup {
+        position: relative;
+        
+        & > * {
+            width: 100%;
+        }
+    }
+
+    &__options {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px -15px;
+
+        & > * {
+            padding: 0 15px;
+        }
+    }
+
+    .form-options__col {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 20px;
+
+		&--half {
+			flex-basis: 50%;
+            width: 50%;
+
+            @include mobile-m {
+                flex-basis: 100%;
+                width: 100%;
+            }
+		}
+    }
+
+    .form-options__titlegroup {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+        & > * {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .form-options__list {
+        & > * {
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__showpassbtn {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        z-index: 10;
+        transform: translateY(-50%);
+    }
+
+    .form-interaction {
+        .btn-shop {
+            @include mobile-m {
+                width: 100%;
+            }
+        }
+    }
+}

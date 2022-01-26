@@ -1,0 +1,579 @@
+<section class="s-checkout">
+
+
+    <div class="container">
+        <h1 class="main-title">Checkout</h1>
+
+        <div class="s-checkout__tiles">
+            <!-- .s-checkout-tile -->
+            <div class="s-checkout__tile s-checkout__tile--lg">
+                <ul class="list-underlined">
+                    <!-- .list-underlined-item -->
+                    <li class="list-underlined__item is-active">
+                        <a href="#!" class="list-underlined__link" aria-label="Link to...">I’m a new user</a>
+                    </li>
+                    <!-- /.list-underlined-item -->
+
+                    <!-- .list-underlined-item -->
+                    <li class="list-underlined__item">
+                        <a href="#!" class="list-underlined__link" aria-label="Link to...">I’m a regular customer</a>
+                    </li>
+                    <!-- /.list-underlined-item -->
+                </ul>
+
+                <div class="form-wizard">
+                    <div class="form-wizard__progress wizard-progress">
+                        <ol class="wizard-progress__list">
+                            <!-- .wizard-progress-item -->
+                            <li class="wizard-progress__item">Personal information &amp; delivery information</li>
+                            <!-- /.wizard-progress-item -->
+
+                            <!-- .wizard-progress-item -->
+                            <li class="wizard-progress__item">Payment</li>
+                            <!-- /.wizard-progress-item -->
+                        </ol>
+                    </div>
+
+                    <form action="#">
+                        <div class="form-wizard__content">
+                            <!-- .form-wizard-pane -->
+                            <fieldset class="form-wizard__pane form-wizard-pane">
+                                <legend class="form-wizard-pane__title sr-only">Personal information &amp; delivery information</legend>
+
+                                <div class="block-info-sec">
+                                    <!-- .block-info-sec-col -->
+                                    <div class="block-info-sec__col">
+                                        <ul class="block-info-sec__list">
+                                            <!-- .block-info-sec-item -->
+                                            <li class="block-info-sec__item">
+                                                <span class="block-info-sec__title">Name</span>
+                                                <p>Jane Cooper</p>
+                                            </li>
+                                            <!-- /.block-info-sec-item -->
+
+                                            <!-- .block-info-sec-item -->
+                                            <li class="block-info-sec__item">
+                                                <span class="block-info-sec__title">Email</span>
+                                                <p>janecooper@gmail.com</p>
+                                            </li>
+                                            <!-- /.block-info-sec-item -->
+
+                                            <!-- .block-info-sec-item -->
+                                            <li class="block-info-sec__item">
+                                                <span class="block-info-sec__title">Phone number</span>
+                                                <p>(406) 555-0120</p>
+                                            </li>
+                                            <!-- /.block-info-sec-item -->
+                                        </ul>
+                                    </div>
+                                    <!-- /.block-info-sec-col -->
+
+                                    <!-- .block-info-sec-col -->
+                                    <div class="block-info-sec__col">
+                                        <ul class="block-info-sec__list">
+                                            <!-- .block-info-sec-item -->
+                                            <li class="block-info-sec__item">
+                                                <span class="block-info-sec__title">Delivery address</span>
+                                                <p>Ukraine, Kharkiv, 24675, <br /> Parker Rd. Allentown str.</p>
+                                            </li>
+                                            <!-- /.block-info-sec-item -->
+                                        </ul>
+                                    </div>
+                                    <!-- /.block-info-sec-col -->
+                                </div>
+
+                                <div class="form-wizard-pane__links">
+                                    <a href="#!" aria-label="Change information button">Change info</a>
+                                </div>
+
+                                <div class="form-primary">                
+                                    <div class="form-primary__ineraction form-interaction">
+                                        <ul class="form-interaction__btngroup form-interaction-btngroup">
+                                            <!-- .form-interaction-btngroup-item -->
+                                            <li class="form-interaction-btngroup__item">
+                                                <button type="button" class="btn-shop form-wizard__nextbtn">
+                                                    Continue
+                                                </button>
+                                            </li>
+                                            <!-- /.form-interaction-btngroup-item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- /.form-wizard-pane -->
+
+                            <!-- .form-wizard-pane -->
+                            <fieldset class="form-wizard__pane form-wizard-pane">
+                                <legend class="form-wizard-pane__title sr-only">Payment</legend>
+
+                                <a href="#!" class="form-wizard__backlink wizard-backlink form-wizard__refreshbtn" aria-label="Link to personal infomarion">
+                                    <svg class="wizard-backlink__ico" width="6" height="12">
+                                        <use xlink:href="img/sprite.svg#chevron-left"></use>
+                                    </svg>
+                                    <span>Change personal information</span>
+                                </a>
+
+                                <div class="payment-block">
+                                    <h2 class="quick-title payment-block__title">Payment method</h2>
+
+                                    <ul class="payment-block__list">
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="mastercard" name="paymentMethod">
+                                                <label for="mastercard" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-master.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="americanExpress" name="paymentMethod">
+                                                <label for="americanExpress" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-americanexpress.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="delta" name="paymentMethod">
+                                                <label for="delta" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-delta.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="visa" name="paymentMethod">
+                                                <label for="visa" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-visa.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+                                    </ul>
+                                </div>
+
+                                <div class="form-primary">                
+                                    <div class="form-primary__wrapper">
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="holderName" class="form-labelgroup__label">Cardholder name</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="holderName" name="holderName" placeholder="Jane Cooper">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="cardNumber" class="form-labelgroup__label">Card number</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary js-only-numbers js-insert-space" id="cardNumber" name="cardNumber" placeholder="4545 7878 6565 3434">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+            
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="expDate" class="form-labelgroup__label">Expiry date</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary js-only-numbers js-expiry-format" id="expDate" name="expDate" placeholder="06/23">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+            
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="cvv" class="form-labelgroup__label">
+                                                        CVV
+                                                    </label>
+                                                    <div class="form-labelgroup__tooltip tooltip-help">
+                                                        <svg class="tooltip-help__ico" width="16" height="16">
+                                                            <use xlink:href="img/sprite.svg#help-circle"></use>
+                                                        </svg>
+                                                        <div class="tooltip-help__content">
+                                                            <div class="tooltip-help__info">
+                                                                The CVV is the last three digits on the back of your card
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="cvv" name="cvv" placeholder="564">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+                                    </div>
+            
+                                    <div class="form-primary__ineraction form-interaction">
+                                        <ul class="form-interaction__btngroup form-interaction-btngroup">
+                                            <!-- .form-interaction-btngroup-item -->
+                                            <li class="form-interaction-btngroup__item">
+                                                <button type="submit" class="btn-shop form-wizard__nextbtn">
+                                                    Checkout
+                                                </button>
+                                            </li>
+                                            <!-- /.form-interaction-btngroup-item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- /.form-wizard-pane -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.s-checkout-tile -->
+
+            <!-- .s-checkout-tile -->
+            <aside class="s-checkout__tile s-checkout__tile--sm">
+                <div class="summary-primary summary-primary--bordered-left">
+                    <header class="summary-primary__header summary-primary-header">
+                        <div class="summary-primary-header__titlegroup">
+                            <h2 class="summary-primary__title">6 Items</h2>
+                        </div>
+                        <div class="summary-primary-header__additional">
+                            <a href="#!" class="summary-primary-header__link" aria-label="Link to...">Сontinue shopping</a>
+                        </div>
+                    </header>
+
+                    <div class="summary-primary__body">
+                        <div class="s-checkout__products js-custom-scrollbar js-prds-fixed-height">
+                            <ul class="products-list">
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$1 250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                Burberry B-Runner asymmetrical sneakers
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">39,5</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+    
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm02.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$500.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti1123123
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">40</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+    
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+                                
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <footer class="summary-primary__footer">
+                        <dl class="list-definitions">
+                            <!-- .list-definitions-item -->
+                            <div class="list-definitions__item">
+                                <dt>subtotal</dt>
+                                <dd>$2000.00</dd>
+                            </div>
+                            <!-- /.list-definitions-item -->
+
+                            <!-- .list-definitions-item -->
+                            <div class="list-definitions__item list-definitions__item--emphasized">
+                                <dt>Total</dt>
+                                <dd>$2000.00</dd>
+                            </div>
+                            <!-- /.list-definitions-item -->
+                        </dl>
+                    </footer>
+                </div>
+            </aside>
+            <!-- /.s-checkout-tile -->
+        </div>
+    </div>
+
+
+</section>

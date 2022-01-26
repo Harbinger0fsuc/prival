@@ -1,0 +1,26 @@
+.list-decorated {
+    &__item {
+        position: relative;
+        padding-left: 56px;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            content: " ";
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-golden);
+        }
+
+        a {
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+}

@@ -1,0 +1,841 @@
+<section class="s-checkout">
+
+
+    <div class="container">
+        <h1 class="main-title">Checkout</h1>
+
+        <div class="s-checkout__tiles">
+            <!-- .s-checkout-tile -->
+            <div class="s-checkout__tile s-checkout__tile--lg">
+                <ul class="list-underlined">
+                    <!-- .list-underlined-item -->
+                    <li class="list-underlined__item is-active">
+                        <a href="#!" class="list-underlined__link" aria-label="Link to...">I’m a new user</a>
+                    </li>
+                    <!-- /.list-underlined-item -->
+
+                    <!-- .list-underlined-item -->
+                    <li class="list-underlined__item">
+                        <a href="#!" class="list-underlined__link" aria-label="Link to...">I’m a regular customer</a>
+                    </li>
+                    <!-- /.list-underlined-item -->
+                </ul>
+
+                <div class="form-wizard">
+                    <div class="form-wizard__progress wizard-progress">
+                        <ol class="wizard-progress__list">
+                            <!-- .wizard-progress-item -->
+                            <li class="wizard-progress__item">Personal information</li>
+                            <!-- /.wizard-progress-item -->
+
+                            <!-- .wizard-progress-item -->
+                            <li class="wizard-progress__item">Delivery information</li>
+                            <!-- /.wizard-progress-item -->
+
+                            <!-- .wizard-progress-item -->
+                            <li class="wizard-progress__item">Payment</li>
+                            <!-- /.wizard-progress-item -->
+                        </ol>
+                    </div>
+
+                    <form action="#">
+                        <div class="form-wizard__content">
+                            <!-- .form-wizard-pane -->
+                            <fieldset class="form-wizard__pane form-wizard-pane">
+                                <legend class="form-wizard-pane__title sr-only">Personal information</legend>
+
+                                <div class="form-primary">                
+                                    <div class="form-primary__wrapper">
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="fName" class="form-labelgroup__label">First name</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="fName" name="fName" placeholder="Jane">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="telNumber" class="form-labelgroup__label">Phone number</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="tel" class="input-primary" id="telNumber" name="telNumber" placeholder="(406) 555-0120">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="lName" class="form-labelgroup__label">Second name</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="lName" name="lName" placeholder="Cooper">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="email" class="form-labelgroup__label">Email</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="email" class="input-primary" id="email" name="email" placeholder="janecooper@gmail.com">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+                                    </div>
+            
+                                    <div class="form-primary__ineraction form-interaction">
+                                        <ul class="form-interaction__btngroup form-interaction-btngroup">
+                                            <!-- .form-interaction-btngroup-item -->
+                                            <li class="form-interaction-btngroup__item">
+                                                <button type="button" class="btn-shop form-wizard__nextbtn">
+                                                    Continue
+                                                </button>
+                                            </li>
+                                            <!-- /.form-interaction-btngroup-item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- /.form-wizard-pane -->
+
+                            <!-- .form-wizard-pane -->
+                            <fieldset class="form-wizard__pane form-wizard-pane">
+                                <legend class="form-wizard-pane__title sr-only">Delivery information</legend>
+
+                                <div class="form-primary">                
+                                    <div class="form-primary__wrapper">
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="country" class="form-labelgroup__label">Country</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <div class="select-custom select-custom--custom-scrollbar">
+                                                        <select name="country" id="country" class="select-custom__wrapper">
+                                                            <option value="" class="select-custom_opt">Category</option>
+                                                            <option value="uaq" class="select-custom_opt" selected>UAE</option>
+                                                            <option value="ua" class="select-custom__opt">Ukraine</option>
+                                                            <option value="pl" class="select-custom__opt">Poland</option>
+                                                            <option value="country2" class="select-custom__opt">C2</option>
+                                                            <option value="country3" class="select-custom__opt">C3</option>
+                                                            <option value="country4" class="select-custom__opt">C4</option>
+                                                            <option value="country5" class="select-custom__opt">C5</option>
+                                                            <option value="country6" class="select-custom__opt">C6</option>
+                                                            <option value="country7" class="select-custom__opt">C7</option>
+                                                            <option value="country8" class="select-custom__opt">C8</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="city" class="form-labelgroup__label">City</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="city" name="city" placeholder="Dubai">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="province" class="form-labelgroup__label">Province (optional)</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="province" name="province">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="address" class="form-labelgroup__label">Address</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="address" name="address" placeholder="Parker Rd. Allentown str.">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="houseNumber" class="form-labelgroup__label">House number</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="houseNumber" name="houseNumber" placeholder="12">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="zip" class="form-labelgroup__label">ZIP code</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="zip" name="zip" placeholder="24675">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="delNotes" class="form-labelgroup__label">Delivery notes</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="delNotes" name="delNotes" placeholder="Leave at the door">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+                                    </div>
+
+                                    <div class="form-primary__options form-options">
+                                        <!-- .form-options-col -->
+                                        <div class="form-options__col form-options__col--half">
+                                            <div class="form-options__titlegroup">
+                                                <span class="form-options__title">Delivery options</span>
+                                                <div class="tooltip-help">
+                                                    <span class="tooltip-help__title">Сonditions</span>
+                                                    <div class="tooltip-help__content">
+                                                        <div class="tooltip-help__info">
+                                                            Free delivery to your specified address in Dubai. If you order delivery to another country or city, you will be automatically charged $50 for the shipment. Thanks in advance for your understanding and cooperation.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="form-options__list">
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="deliverySpecified" name="deliveryOptions">
+                                                        <label for="deliverySpecified" class="custom-checkbox-sec__label custom-checkbox-sec-label">
+                                                            <span class="custom-checkbox-sec-label__text">
+                                                                At the specified address (Free)
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="deliveryOffice" name="deliveryOptions">
+                                                        <label for="deliveryOffice" class="custom-checkbox-sec__label">
+                                                            <span class="custom-checkbox-sec-label__text">Pick up from the office</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+                                            </ul>
+                                        </div>
+                                        <!-- /.form-options-col -->
+
+                                        <!-- .form-options-col -->
+                                        <div class="form-options__col form-options__col--half">
+                                            <div class="form-options__titlegroup">
+                                                <span class="form-options__title">Payment options</span>
+                                            </div>
+                                            <ul class="form-options__list">
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="paymentCash" name="paymentOptions">
+                                                        <label for="paymentCash" class="custom-checkbox-sec__label custom-checkbox-sec-label">
+                                                            <span class="custom-checkbox-sec-label__text">Cash payment</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="paymentCard" name="paymentOptions">
+                                                        <label for="paymentCard" class="custom-checkbox-sec__label custom-checkbox-sec-label">
+                                                            <span class="custom-checkbox-sec-label__text">Payment by card on the site</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+                                            </ul>
+                                        </div>
+                                        <!-- /.form-options-col -->
+                                    </div>
+
+                                    <div class="form-primary__options form-options">
+                                        <!-- .form-options-col -->
+                                        <div class="form-options__col">
+                                            <div class="form-options__titlegroup">
+                                                <span class="form-options__title">Packaging options (free)</span>
+                                            </div>
+                                            <ul class="form-options__list">
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec custom-checkbox-sec--bordered">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="packagingEco" name="packagingOptions" checked>
+                                                        <label for="packagingEco" class="custom-checkbox-sec__label custom-checkbox-sec-label">
+                                                            <span class="custom-checkbox-sec-label__title">Eco-friendly packaging</span>
+                                                            <span class="custom-checkbox-sec-label__text">Recycled, locally-made and better for the planet</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec custom-checkbox-sec--bordered">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="packagingPremium" name="packagingOptions">
+                                                        <label for="packagingPremium" class="custom-checkbox-sec__label custom-checkbox-sec-label">
+                                                            <span class="custom-checkbox-sec-label__title">Premium packaging</span>
+                                                            <span class="custom-checkbox-sec-label__text">True luxury for special occasions</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+
+                                                <!-- .form-options-list -->
+                                                <li class="form-options__item">
+                                                    <div class="custom-checkbox-sec custom-checkbox-sec--bordered">
+                                                        <input type="radio" class="custom-checkbox-sec__itself sr-only" id="packagingContactless" name="packagingOptions">
+                                                        <label for="packagingContactless" class="custom-checkbox-sec__label checkbox-payment-label">
+                                                            <span class="custom-checkbox-sec-label__title">Contactless delivery</span>
+                                                            <span class="custom-checkbox-sec-labe__text">We’ll leave your order at your door</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!-- /.form-options-list -->
+                                            </ul>
+                                        </div>
+                                        <!-- /.form-options-col -->
+                                    </div>
+            
+                                    <div class="form-primary__ineraction form-interaction">
+                                        <ul class="form-interaction__btngroup form-interaction-btngroup">
+                                            <!-- .form-interaction-btngroup-item -->
+                                            <li class="form-interaction-btngroup__item">
+                                                <button type="button" class="btn-shop form-wizard__nextbtn">
+                                                    Continue
+                                                </button>
+                                            </li>
+                                            <!-- /.form-interaction-btngroup-item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- /.form-wizard-pane -->
+
+                            <!-- .form-wizard-pane -->
+                            <fieldset class="form-wizard__pane form-wizard-pane">
+                                <legend class="form-wizard-pane__title sr-only">Payment</legend>
+
+                                <a href="#!" class="form-wizard__backlink wizard-backlink form-wizard__refreshbtn" aria-label="Link to personal infomarion">
+                                    <svg class="wizard-backlink__ico" width="6" height="12">
+                                        <use xlink:href="img/sprite.svg#chevron-left"></use>
+                                    </svg>
+                                    <span>Change personal information</span>
+                                </a>
+
+                                <div class="payment-block">
+                                    <h2 class="quick-title payment-block__title">Payment method</h2>
+
+                                    <ul class="payment-block__list">
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="mastercard" name="paymentMethod">
+                                                <label for="mastercard" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-master.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="americanExpress" name="paymentMethod">
+                                                <label for="americanExpress" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-americanexpress.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="delta" name="paymentMethod">
+                                                <label for="delta" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-delta.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+
+                                        <!-- .payment-block-item -->
+                                        <li class="payment-block__item">
+                                            <div class="checkbox-payment">
+                                                <input type="radio" class="checkbox-payment__itself sr-only" id="visa" name="paymentMethod">
+                                                <label for="visa" class="checkbox-payment__label checkbox-payment-label">
+                                                    <img src="./img/logos/logo-visa.png" alt="desc">
+                                                    <span class="checkbox-payment__sign">
+                                                        <svg class="checkbox-payment__ico" width="5" height="5">
+                                                            <use xlink:href="img/sprite.svg#check-sec"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <!-- /.payment-block-item -->
+                                    </ul>
+                                </div>
+
+                                <div class="form-primary">                
+                                    <div class="form-primary__wrapper">
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="holderName" class="form-labelgroup__label">Cardholder name</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="holderName" name="holderName" placeholder="Jane Cooper">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="cardNumber" class="form-labelgroup__label">Card number</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary js-only-numbers js-insert-space" id="cardNumber" name="cardNumber" placeholder="4545 7878 6565 3434">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+            
+                                        <!-- .form-primary-row -->
+                                        <div class="form-primary__row">
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="expDate" class="form-labelgroup__label">Expiry date</label>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary js-only-numbers js-expiry-format" id="expDate" name="expDate" placeholder="06/23">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+            
+                                            <!-- .form-primary-col -->
+                                            <div class="form-primary__col form-primary__col--half">
+                                                <div class="form-primary__labelgroup form-labelgroup">
+                                                    <label for="cvv" class="form-labelgroup__label">
+                                                        CVV
+                                                    </label>
+                                                    <div class="form-labelgroup__tooltip tooltip-help">
+                                                        <svg class="tooltip-help__ico" width="16" height="16">
+                                                            <use xlink:href="img/sprite.svg#help-circle"></use>
+                                                        </svg>
+                                                        <div class="tooltip-help__content">
+                                                            <div class="tooltip-help__info">
+                                                                The CVV is the last three digits on the back of your card
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-primary__inputgroup">
+                                                    <input type="text" class="input-primary" id="cvv" name="cvv" placeholder="564">
+                                                </div>
+                                            </div>
+                                            <!-- /.form-primary-col -->
+                                        </div>
+                                        <!-- /.form-primary-row -->
+                                    </div>
+            
+                                    <div class="form-primary__ineraction form-interaction">
+                                        <ul class="form-interaction__btngroup form-interaction-btngroup">
+                                            <!-- .form-interaction-btngroup-item -->
+                                            <li class="form-interaction-btngroup__item">
+                                                <button type="submit" class="btn-shop form-wizard__nextbtn">
+                                                    Checkout
+                                                </button>
+                                            </li>
+                                            <!-- /.form-interaction-btngroup-item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- /.form-wizard-pane -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.s-checkout-tile -->
+
+            <!-- .s-checkout-tile -->
+            <aside class="s-checkout__tile s-checkout__tile--sm">
+                <div class="summary-primary summary-primary--bordered-left">
+                    <header class="summary-primary__header summary-primary-header">
+                        <div class="summary-primary-header__titlegroup">
+                            <h2 class="summary-primary__title">6 Items</h2>
+                        </div>
+                        <div class="summary-primary-header__additional">
+                            <a href="#!" class="summary-primary-header__link" aria-label="Link to...">Сontinue shopping</a>
+                        </div>
+                    </header>
+
+                    <div class="summary-primary__body">
+                        <div class="s-checkout__products js-custom-scrollbar js-prds-fixed-height">
+                            <ul class="products-list">
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$1 250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                Burberry B-Runner asymmetrical sneakers
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">39,5</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+    
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm02.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$500.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti1123123
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">40</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+    
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+                                
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <footer class="summary-primary__footer">
+                        <dl class="list-definitions">
+                            <!-- .list-definitions-item -->
+                            <div class="list-definitions__item">
+                                <dt>subtotal</dt>
+                                <dd>$2000.00</dd>
+                            </div>
+                            <!-- /.list-definitions-item -->
+
+                            <!-- .list-definitions-item -->
+                            <div class="list-definitions__item list-definitions__item--emphasized">
+                                <dt>Total</dt>
+                                <dd>$2000.00</dd>
+                            </div>
+                            <!-- /.list-definitions-item -->
+                        </dl>
+                    </footer>
+                </div>
+            </aside>
+            <!-- /.s-checkout-tile -->
+        </div>
+    </div>
+
+
+</section>

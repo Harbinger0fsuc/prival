@@ -1,0 +1,55 @@
+.checkbox-payment {
+	$this: &;
+
+	&__itself {
+		&:checked + #{$this}__label {
+            border-color: var(--color-golden);
+
+            #{$this}__sign {
+                opacity: 1;
+            }
+		}
+
+		// &:checked + #{$this}__label::after {
+		// 	opacity: 1;
+		// }
+	}
+
+	&__label {
+		position: relative;
+		display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 75px;
+        min-height: 46px;
+        padding: 10px;
+        border: 1px solid var(--color-disabled);
+        cursor: pointer;
+		user-select: none;
+
+        img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+	}
+
+    &__sign {
+        position: absolute;
+        bottom: 100%;
+        left: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        opacity: 0;
+        border-radius: 50%;
+        background-color: var(--color-golden);
+        transform: translate(-50%, 50%);
+    }
+
+    &__ico {
+        fill: #fff;
+    }
+}

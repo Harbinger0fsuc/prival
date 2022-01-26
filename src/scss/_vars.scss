@@ -1,0 +1,33 @@
+// COLORS
+:root {
+  --color-white: #fffff;
+  --color-golden: #bf9366;
+  --color-black: #000000;
+  --color-hover: #c09d79;
+  --color-disabled: #e2e2e2;
+  --color-silver: #9d9d9d;
+  --color-gray-noble: #b3b3b3;
+  --color-gray-sand: #f6f6f6;
+  --color-gray-mercury: #e2e2e2;
+  --color-red: #bb0d0d;
+  --color-filter: #dadada;
+  --color-form: #fdfbfa;
+  --color-border-form: #9d9d9d;
+  --account-bg: rgba(191, 147, 102, 0.03);
+  --color-gift:#7d7d7d;
+}
+
+
+
+$white:#fff;
+
+// FONTS
+
+$font-body: normal 300 14px/1.7 'Adieu',
+sans-serif;
+$font-bold: normal 700 24px/1.2 'Adieu',
+sans-serif;
+$font-medium: normal 400 14px/1.1 'CervoNeue',
+sans-serif;
+$font-btn: normal 400 20px/1.2 'CervoNeue',
+sans-serif;

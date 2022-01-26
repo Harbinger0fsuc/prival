@@ -1,0 +1,391 @@
+<section class="s-checkout">
+
+
+    <div class="container">
+        <h1 class="main-title">Checkout</h1>
+
+        <div class="s-checkout__tiles">
+            <!-- .s-checkout-tile -->
+            <div class="s-checkout__tile s-checkout__tile--lg">
+                <ul class="list-underlined">
+                    <!-- .list-underlined-item -->
+                    <li class="list-underlined__item">
+                        <a href="#!" class="list-underlined__link" aria-label="Link to...">I’m a new user</a>
+                    </li>
+                    <!-- /.list-underlined-item -->
+
+                    <!-- .list-underlined-item -->
+                    <li class="list-underlined__item is-active">
+                        <a href="#!" class="list-underlined__link" aria-label="Link to...">I’m a regular customer</a>
+                    </li>
+                    <!-- /.list-underlined-item -->
+                </ul>
+
+                <div class="form-primary">                
+                    <form>
+                        <div class="form-primary__wrapper">    
+                            <!-- .form-primary-row -->
+                            <div class="form-primary__row">    
+                                <!-- .form-primary-col -->
+                                <div class="form-primary__col form-primary__col--half">
+                                    <div class="form-primary__labelgroup form-labelgroup">
+                                        <label for="email" class="form-labelgroup__label">Email</label>
+                                    </div>
+                                    <div class="form-primary__inputgroup">
+                                        <input type="email" class="input-primary" id="email" name="email" placeholder="janecooper@gmail.com">
+                                    </div>
+                                </div>
+                                <!-- /.form-primary-col -->
+
+                                <!-- .form-primary-col -->
+                                <div class="form-primary__col form-primary__col--half">
+                                    <div class="form-primary__labelgroup form-labelgroup">
+                                        <label for="password" class="form-labelgroup__label">Password</label>
+                                    </div>
+                                    <div class="form-primary__inputgroup">
+                                        <input type="password" class="input-primary" id="password" name="password" placeholder="●●●●●●●●●">
+                                        <button type="button" class="form-primary__showpassbtn js-toggle-password password-toggler" data-input="#password">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <rect class="password-toggler__line" x="2.41418" y="1" width="30" height="2" rx="1" transform="rotate(45 2.41418 1)" fill="black"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.form-primary-col -->
+                            </div>
+                            <!-- /.form-primary-row -->
+                        </div>
+                    </form>
+
+                    <div class="form-primary__ineraction form-interaction">
+                        <ul class="form-interaction__btngroup form-interaction-btngroup">
+                            <!-- .form-interaction-btngroup-item -->
+                            <li class="form-interaction-btngroup__item">
+                                <button class="btn-shop">
+                                    Log in
+                                </button>
+                            </li>
+                            <!-- /.form-interaction-btngroup-item -->
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="s-checkout__interaction checkout-interaction-list">
+                    <!-- .checkout-interaction-list-item -->
+                    <li class="checkout-interaction-list__item">
+                        <a href="#!" class="checkout-interaction-list__link" aria-label="Link to...">Forgot password?</a>
+                    </li>
+                    <!-- .checkout-interaction-list-item -->
+                </ul>
+            </div>
+            <!-- /.s-checkout-tile -->
+
+            <!-- .s-checkout-tile -->
+            <aside class="s-checkout__tile s-checkout__tile--sm">
+                <div class="summary-primary summary-primary--bordered-left">
+                    <header class="summary-primary__header summary-primary-header">
+                        <div class="summary-primary-header__titlegroup">
+                            <h2 class="summary-primary__title">6 Items</h2>
+                        </div>
+                        <div class="summary-primary-header__additional">
+                            <a href="#!" class="summary-primary-header__link" aria-label="Link to...">Сontinue shopping</a>
+                        </div>
+                    </header>
+
+                    <div class="summary-primary__body">
+                        <div class="s-checkout__products js-custom-scrollbar js-prds-fixed-height">
+                            <ul class="products-list">
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$1 250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                Burberry B-Runner asymmetrical sneakers
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">39,5</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+    
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm02.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$500.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti1123123
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">40</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+    
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+                                
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+
+                                <!-- .products-list-item -->
+                                <li class="products-list__item">
+                                    <article class="card-product-sm">
+                                        <div class="card-product-sm__img">
+                                            <img src="./img/products/pic-product-sm01.jpg" alt="">
+                                        </div>
+                                        <div class="card-product-sm__info">
+                                            <span class="card-product-sm__price">$250.00</span>
+                                            <div class="card-product-sm__desc">
+                                                ASOS Petite ski skinny ski trouser with sti...
+                                            </div>
+                                            <ul class="card-product-sm-params product-params">
+                                                <!-- .product-params-item -->
+                                                <li class="product-params__item">
+                                                    <span class="product-params__param">Black</span>
+                                                    <span class="product-params__param">36</span>
+                                                </li>
+                                                <!-- /.product-params-item -->
+                                            </ul>
+                                            <div class="card-product-sm__interaction">
+                                                <div class="qnt-picker">
+                                                    <button type="button" class="qnt-picker__btn minus-btn" aria-label="Minus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" class="qnt-picker__input" name="product-qnt" value="1" min="1" max="99">
+                                                    <button type="button" class="qnt-picker__btn plus-btn" aria-label="Plus button">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button class="card-product-sm__remove" aria-label="Delete item">
+                                                    <svg width="12" height="12">
+                                                        <use xlink:href="img/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <!-- /.products-list-item -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <footer class="summary-primary__footer">
+                        <dl class="list-definitions">
+                            <!-- .list-definitions-item -->
+                            <div class="list-definitions__item">
+                                <dt>subtotal</dt>
+                                <dd>$2000.00</dd>
+                            </div>
+                            <!-- /.list-definitions-item -->
+
+                            <!-- .list-definitions-item -->
+                            <div class="list-definitions__item list-definitions__item--emphasized">
+                                <dt>Total</dt>
+                                <dd>$2000.00</dd>
+                            </div>
+                            <!-- /.list-definitions-item -->
+                        </dl>
+                    </footer>
+                </div>
+            </aside>
+            <!-- /.s-checkout-tile -->
+        </div>
+    </div>
+
+
+</section>

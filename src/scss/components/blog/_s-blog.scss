@@ -1,0 +1,52 @@
+.s-blog {
+    padding: 40px 0 60px;
+
+    @include mobile-m {
+        padding: 30px 0;
+    }    
+
+    .main-title {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        @include H2;
+
+        margin-bottom: 40px;
+    }
+
+    &__featured {
+        margin-bottom: 40px;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &-items__col {
+        display: flex;
+        flex: 0 1 33.3333%;
+        padding: 0 15px;
+        margin-bottom: 40px;
+
+        @include tablet {
+            flex-basis: 50%;
+        }
+
+        @include mobile-m {
+            flex-basis: 100%;
+        } 
+    }
+
+    &-items__item {
+        height: 100%;
+    }
+
+    // Modifiers for the section
+    &--additional {
+        padding: 40px 0 60px;
+    }
+}
+

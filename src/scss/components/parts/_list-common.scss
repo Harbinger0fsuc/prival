@@ -1,0 +1,28 @@
+.list-common {
+    &__item {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & > * {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    p {
+        & > b {
+            font-size: 16px;
+        }
+    }
+}

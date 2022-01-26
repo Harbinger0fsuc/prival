@@ -1,0 +1,32 @@
+.list-underlined {
+    $this: &;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+
+    & > * {
+        padding: 0 12px;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+
+        &.is-active {
+            #{$this}__link {
+                color: #C09D79;
+            }
+        }
+    }
+
+    &__link {
+        color: #ece2d7;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 9px;
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: #C09D79;
+        }
+    }
+}

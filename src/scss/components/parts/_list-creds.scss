@@ -1,0 +1,20 @@
+.list-creds {
+    &__item {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        text-transform: capitalize;
+
+        span {
+            color: var(--color-golden);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

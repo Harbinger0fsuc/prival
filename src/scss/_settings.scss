@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: $font-body;
+  background-color: var(--color-white);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 1284px;
+  width: 100%;
+
+  &--sm {
+    max-width: 911px;
+  }
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.error {
+  border: 2px #ff4019 solid;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: transparent;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.disabled {
+  background-color: var(--color-disabled) !important;
+  color: var(--color-disabled) !important;
+  pointer-events: all !important;
+
+}
+
+.error {
+  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 136px;
+
+  @include desktop {
+    margin-top: 160px;
+  }
+
+  @include tablet {
+    margin-top: 150px;
+  }
+
+  @include mobile-m {
+    margin-top: 140px;
+  }
+
+  &.blog {
+    @include mobile-m {
+      margin-top: 100px;
+    }
+  }
+
+  &.single {
+    margin-top: 0;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+
+.logo {
+  max-width: 163px;
+  z-index: 5;
+
+  @include desktop {
+    margin-right: 70px;
+  }
+
+  @include mobile {
+    margin-right: auto;
+  }
+
+  @include mobile-m {
+    max-width: 144px;
+  }
+
+  &__img {
+    @include mobile-s {
+      height: 18px;
+
+    }
+  }
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.all-link {
+  position: relative;
+  padding-right: 25px;
+  @include body-sec;
+  @include hover-bl;
+  white-space: nowrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-black);
+    mask-image: url('../img/sprite.svg#arrow-footer');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 8px;
+    width: 14px;
+    right: 0;
+    bottom: 50%;
+    transition: background-color 0.3s linear;
+    transform: rotate(-90deg) translateX(-30%);
+  }
+
+  &:hover {
+    @include hover-full;
+
+    &::after {
+      background-color: var(--color-golden);
+    }
+  }
+}

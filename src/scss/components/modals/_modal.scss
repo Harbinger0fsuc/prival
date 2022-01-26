@@ -1,0 +1,108 @@
+.modal {
+    $this: &;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.1s linear;
+    z-index: 10;
+
+    &__overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: inherit;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(25px);
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 606px;
+        max-height: 70vh;
+        overflow: hidden auto;
+        background: var(--color-form);
+        border: 1px solid var(--color-golden);
+        padding: 40px;
+
+        @include mobile-m {
+            padding: 30px 25px;
+        }
+    }
+
+    &__close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+
+    &__desc {
+        &--textcenter {
+            text-align: center;
+        }
+
+        @include mobile-m {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &-notification {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & > * {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-notification__icon {
+        margin-bottom: 16px;
+    }
+
+    &-notification__title {
+        margin-bottom: 8px;
+    }
+
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    &--success {
+        #{$this}__desc {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &--error {
+        #{$this}-notification__title {
+            color: var(--color-red);
+        }
+    }
+
+    &--width-sm {
+        #{$this}__content {
+            max-width: 489px;
+        }
+    }
+}

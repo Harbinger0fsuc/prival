@@ -1,0 +1,27 @@
+.s-delivery {
+    padding: 30px 0 100px;
+
+    &__destinations {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 10px;
+
+        & > * {
+            padding: 0 15px;
+        }
+    }
+
+    .destination-list__col {
+        display: flex;
+        flex: 0 1 50%;
+        margin-bottom: 30px;
+
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
+
+    .destination-list__item {
+        display: inline;
+    }
+}

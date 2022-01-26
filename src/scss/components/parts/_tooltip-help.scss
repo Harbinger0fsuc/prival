@@ -1,0 +1,89 @@
+.tooltip-help {
+    $this: &;
+
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+
+    &:hover {
+        #{$this}__content {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+
+    &__ico,
+    &__title {
+        cursor: pointer;
+    }
+
+    &__ico {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    &__title {
+        color: var(--color-silver);
+        text-decoration: underline;
+    }
+
+    &__content {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: 25;
+        padding-top: 10px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-50%);
+        transition: all 0.3s linear;
+    }
+
+    &__info {
+        position: relative;
+        width: 241px;
+        font-size: 12px;
+        background: #fff;
+        color: var(--color-black);
+        border: 1px solid var(--color-silver);
+        padding: 7px 12px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            content: " ";
+            transform: translateX(-50%);
+        }
+
+        &::before {
+            border-bottom: 5px solid var(--color-silver);
+            margin-bottom: 1.5px;
+        }
+
+        &::after {
+            border-bottom: 5px solid #fff;
+            margin-bottom: 0.5px;
+            z-index: 10;
+        }
+
+        // &::before {
+        //     position: absolute;
+        //     bottom: 100%;
+        //     left: 50%;
+        //     content: " ";
+        //     width: 0;
+        //     height: 0;
+        //     transform: translateX(-50%);
+        //     border-style: solid;
+        //     border-width: 0 7.5px 8px 7.5px;
+        //     border-color: transparent transparent var(--color-silver) transparent;
+        // }
+    }
+}

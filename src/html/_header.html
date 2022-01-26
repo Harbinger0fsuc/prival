@@ -1,0 +1,121 @@
+<header class="header">
+
+  <div class="header-adv">
+    <p class="header-adv__text">Shop with up to 50% off</p>
+
+    <button class="header-adv__close" type="button">
+      <span class="sr-only">
+        Close tooltip
+      </span>
+
+      <svg class="header-adv__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+
+    </button>
+  </div>
+
+  <div class="container">
+    <nav class="header__nav">
+
+      <a class="logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="Privilege designers website" width="163" height="26">
+      </a>
+
+      <button class="burger" type="button">
+        <span class="sr-only">
+          Menu
+        </span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+      <ul class="header__menu">
+
+        <li class="header__item" data-menu-id="1">
+          <a class="header__link" href="#">
+            Designers
+          </a>
+        </li>
+
+        <li class="header__item" data-menu-id="2">
+          <a class="header__link" href="#">
+            Clothing
+          </a>
+        </li>
+
+        <li class="header__item" data-menu-id="3">
+          <a class="header__link" href="#">
+            Shoes
+          </a>
+        </li>
+
+        <li class="header__item" data-menu-id="4">
+          <a class="header__link" href="#">
+            Accessories
+          </a>
+        </li>
+
+        <li class="header__item" data-menu-id="5">
+          <a class="header__link" href="#">
+            Sport
+          </a>
+        </li>
+
+        <li class="header__item" data-menu-id="6">
+          <a class="header__link" href="#">
+            Gifts
+          </a>
+        </li>
+
+        <li class="header__item" data-menu-id="7">
+          <a class="header__link" href="#">
+            Interior
+          </a>
+        </li>
+      </ul>
+
+
+
+      <ul class="header__action">
+
+        <li class="header__action-item header__action-item--search">
+          <form class="search" action="#">
+
+            @include('parts/_search-field.html',{
+            class:"search__header"
+            })
+
+          </form>
+        </li>
+
+        <li class="header__action-item">
+
+          <a class="header__action-link" href="#">
+            <span class="sr-only">Cart</span>
+
+            <svg class="header__action-icon">
+              <use xlink:href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="header__action-item">
+
+          <a class="header__action-link" href="#">
+            <span class="sr-only">Personal Account</span>
+
+            <svg class="header__action-icon">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </li>
+
+
+      </ul>
+    </nav>
+  </div>
+  @include('parts/_dropdown.html')
+
+</header>

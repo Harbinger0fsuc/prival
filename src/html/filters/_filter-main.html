@@ -1,0 +1,22 @@
+<div class="filters">
+  <button class="btn-shop filters__btn">
+    Show filters
+  </button>
+
+
+  <div class="filters__selectors">
+
+    <label class="sr-only" for="numbers">
+      Number of item
+    </label>
+    <select class="filters__number js-choice" name="number" id="numbers">
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="9">9</option>
+    </select>
+
+    @include("_filter-by.html")
+
+  </div>
+
+</div>

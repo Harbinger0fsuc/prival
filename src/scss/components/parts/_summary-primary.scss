@@ -1,0 +1,64 @@
+.summary-primary {
+    &__header,
+    &__footer {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 5px;
+            width: calc(100% - 10px);
+            height: 1px;
+            background-color: var(--color-gray-mercury);
+            content: " ";
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        margin: 0 -5px 24px;
+
+        &::before {
+            bottom: 0;
+        }
+
+        & > * {
+            padding: 0 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &-header__link {
+        text-decoration: underline;
+    }
+
+    &__body {
+        margin-bottom: 24px;
+    }
+
+    &__footer {
+        padding-top: 24px;
+        
+        &::before {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    // Modifiers for the component
+    &--bordered-left {
+        border-left: 1px solid var(--color-gray-mercury);
+        padding-left: 44px;
+
+        @include mobile-s {
+            padding-left: 15px;
+        }
+    }
+}

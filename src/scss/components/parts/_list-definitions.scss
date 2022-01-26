@@ -1,0 +1,25 @@
+.list-definitions {
+    &__item {
+        display: flex;
+        margin: 0 -5px 15px;
+
+        & > * {
+            flex: 1 1 50%;
+            font-size: 12px;
+            text-transform: capitalize;
+            padding: 0 5px;
+        }
+
+        dd {
+            text-align: right;
+        }
+
+        // Modifiers for the item
+        &--emphasized {
+            & > * {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}

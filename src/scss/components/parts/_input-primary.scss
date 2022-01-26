@@ -1,0 +1,9 @@
+.input-primary {
+    width: 100%;
+    border: 1px solid var(--color-silver);
+    padding: 8px 10px;
+
+    &::placeholder {
+        color: var(--color-black);
+    }
+}

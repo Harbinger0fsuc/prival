@@ -1,0 +1,9 @@
+.search-page {
+  @include flex-all-sb;
+  padding-top: 40px;
+
+  .title {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
